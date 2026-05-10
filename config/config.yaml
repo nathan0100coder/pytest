@@ -5,3 +5,4 @@ java_service:
   headers:
     Content-Type: "application/json"
     Accept: "application/json"
+  token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.pytest-dev-token"

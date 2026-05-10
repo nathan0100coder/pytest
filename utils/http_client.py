@@ -12,11 +12,15 @@ logger = logging.getLogger(__name__)
 class HttpClient:
     """HTTP 客户端，用于调用 Java 服务 API"""
 
-    def __init__(self, config_path: str = "config/config.yaml"):
+    def __init__(self, config_path: str = "config/config.yaml", enable_token: bool = False):
         self.config = self._load_config(config_path)
         self.base_url = self.config.get("java_service", {}).get("base_url", "").rstrip("/")
         self.timeout = self.config.get("java_service", {}).get("timeout", 30)
         self.default_headers = self.config.get("java_service", {}).get("headers", {})
+        if enable_token:
+            token = self.config.get("java_service", {}).get("token", "")
+            if token:
+                self.default_headers = {**self.default_headers, "Authorization": f"Bearer {token}"}
 
     def _load_config(self, config_path: str) -> Dict[str, Any]:
         """加载 YAML 配置文件"""

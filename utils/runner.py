@@ -45,18 +45,19 @@ def _resolve_json_path(project_root: str, requests_dir: str, target: str) -> str
     return target
 
 
-def run(json_name: str = None):
+def run(json_name: str = None, enable_token: bool = False):
     """
     执行 runner 逻辑。
 
     :param json_name: 显式传入 requests/ 目录下的 JSON 文件名称（如 "org_list"）。
                       为 None 时，优先读取命令行参数；命令行也无参数则执行全部。
+    :param enable_token: 是否在请求头中携带 Authorization token，默认 False。
     """
     project_root = get_project_root()
     config_path = os.path.join(project_root, "config", "config.yaml")
     requests_dir = os.path.join(project_root, "requests")
 
-    client = HttpClient(config_path=config_path)
+    client = HttpClient(config_path=config_path, enable_token=enable_token)
 
     # 1) 若显式传入了 json_name，直接解析并使用
     if json_name is not None:
