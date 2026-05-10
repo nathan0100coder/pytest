@@ -1,0 +1,12 @@
+{
+  "name": "更新组织架构",
+  "path": "/api/org/update",
+  "method": "POST",
+  "description": "更新组织架构信息",
+  "body": {
+    "id": 1001,
+    "name": "矩阵工业集团（更新后）",
+    "leader": "张三（董事长）",
+    "memberCount": 200
+  }
+}

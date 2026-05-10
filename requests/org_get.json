@@ -1,0 +1,9 @@
+{
+  "name": "查询组织架构",
+  "path": "/api/org/get",
+  "method": "POST",
+  "description": "根据ID查询组织架构（传JSON用POST）",
+  "body": {
+    "id": 1001
+  }
+}

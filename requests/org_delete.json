@@ -1,0 +1,9 @@
+{
+  "name": "删除组织架构",
+  "path": "/api/org/delete",
+  "method": "POST",
+  "description": "根据ID删除组织架构",
+  "body": {
+    "id": 1004
+  }
+}

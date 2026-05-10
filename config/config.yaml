@@ -1,6 +1,6 @@
 # Java 服务配置
 java_service:
-  base_url: "http://localhost:8080"
+  base_url: "http://localhost:8081"
   timeout: 30
   headers:
     Content-Type: "application/json"

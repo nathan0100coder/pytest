@@ -1,0 +1,12 @@
+{
+  "name": "创建组织架构",
+  "path": "/api/org/create",
+  "method": "POST",
+  "description": "创建新组织架构",
+  "body": {
+    "name": "运维中心",
+    "parentId": 1001,
+    "leader": "孙七",
+    "memberCount": 30
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "组织架构列表",
+  "path": "/api/org/list",
+  "method": "GET",
+  "description": "查询组织架构列表（无参GET）"
+}
