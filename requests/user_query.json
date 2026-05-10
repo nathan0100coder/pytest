@@ -1,0 +1,10 @@
+{
+  "name": "查询用户",
+  "path": "/api/users/{id}",
+  "method": "GET",
+  "description": "根据ID查询用户详情",
+  "path_params": {
+    "id": "1001"
+  },
+  "query_params": {}
+}

@@ -1,0 +1,14 @@
+{
+  "name": "更新用户",
+  "path": "/api/users/{id}",
+  "method": "POST",
+  "description": "更新用户信息",
+  "path_params": {
+    "id": "1001"
+  },
+  "body": {
+    "username": "zhangsan_updated",
+    "email": "zhangsan_new@example.com",
+    "phone": "13900139000"
+  }
+}

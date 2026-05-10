@@ -1,0 +1,12 @@
+{
+  "name": "创建用户",
+  "path": "/api/users",
+  "method": "POST",
+  "description": "创建新用户",
+  "body": {
+    "username": "zhangsan",
+    "email": "zhangsan@example.com",
+    "phone": "13800138000",
+    "age": 25
+  }
+}

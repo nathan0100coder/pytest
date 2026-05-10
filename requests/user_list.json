@@ -1,0 +1,11 @@
+{
+  "name": "用户列表",
+  "path": "/api/users",
+  "method": "GET",
+  "description": "分页查询用户列表",
+  "query_params": {
+    "pageNum": 1,
+    "pageSize": 10,
+    "keyword": "zhang"
+  }
+}
